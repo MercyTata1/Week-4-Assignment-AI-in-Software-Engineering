@@ -1,0 +1,15 @@
+The manual and AI-generated implementations for sorting a list of dictionaries by a key are functionally identical, both using Python’s built-in sorted() function with a lambda for key extraction. This results in identical time complexity (O(n log n)), meaning neither version is computationally more efficient.
+
+The primary differences lie in readability:
+
+The AI-generated version (e.g., item[sort_key]) uses more descriptive variable names compared to the manual version’s generic x[key].
+
+The AI also included a docstring without being explicitly asked, improving documentation.
+
+Limitations Observed:
+
+The AI suggestion didn’t account for edge cases (e.g., missing keys), which a developer might add manually.
+
+Both versions assume all dictionaries contain the key; neither includes error handling.
+
+Conclusion: While the AI accelerated development by generating production-ready code instantly, the manual implementation allowed for tighter control over variable naming and edge cases. For simple tasks like this, AI tools save time but may not outperform a developer’s intentional design choices.
