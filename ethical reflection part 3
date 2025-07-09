@@ -1,0 +1,9 @@
+**Potential Biases:**
+1. **Scanner Bias**: Images from different machines may vary in resolution/contrast
+2. **Demographic Bias**: Underrepresentation of rare age groups or ethnicities
+3. **Labeling Bias**: Subjectivity in borderline benign/malignant cases
+
+**Mitigation with IBM AI Fairness 360:**
+1. Use `DisparateImpactRatio` to check fairness across subgroups
+2. Apply `Reweighing` to balance underrepresented classes
+3. Monitor `False Negative Rates` for high-priority cases
